@@ -14,7 +14,7 @@ public class RateLimiterInterceptor implements HandlerInterceptor {
 
     private final Map<String, Long> requestCounts = new ConcurrentHashMap<>();
     private final long timeWindowInMillis = 60000; // 60 seconds
-    private final int requestLimit = 2;
+    private final int requestLimit = 60;
     private static long count =0;
 
     @Override
